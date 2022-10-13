@@ -1,2 +1,11 @@
-@import './common';
-@import './example';
+// Utils styles
+@import './utils/common';
+@import './utils/vars';
+@import './utils/visually-hidden';
+
+// Base styles
+@import './base/fonts';
+@import './base/reset';
+@import './base/base-styles';
+
+// Components styles
