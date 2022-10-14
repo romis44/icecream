@@ -1,16 +1,16 @@
-@mixin section($pt: 94px, $pb: 94px) {
+@mixin section($pt: 60px, $pb: 60px) {
   padding-top: $pt;
   padding-bottom: $pb;
 }
 
-@mixin list($d: flex, $g: 30px, $fd: row, $fw: nowrap) {
+@mixin list($d: flex, $g: 32px, $fd: row, $fw: nowrap) {
   display: $d;
   gap: $g;
   flex-direction: $fd;
   flex-wrap: $fw;
 }
 
-@mixin item($q: 4, $g: 30px) {
+@mixin item($q: 3, $g: 32px) {
   flex-basis: calc((100% - (#{$q} - 1) * #{$g}) / #{$q});
 }
 
@@ -21,4 +21,10 @@
   line-height: $lh;
   letter-spacing: $ls;
   color: $fc;
+}
+
+@mixin transition($one, $two, $three, $time, $func) {
+  transition-property: $one, $two, $three;
+  transition-duration: $time;
+  transition-timing-function: $func;
 }
