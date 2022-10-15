@@ -1,7 +1,7 @@
 .footer-spitch {
   font-weight: 700;
   font-size: 18px;
-  line-height: calc(22 / 18);
+  line-height: 1.22;
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
@@ -10,23 +10,20 @@
 
   @media screen and(min-width:768px) {
     font-size: 26px;
-    line-height: calc(32 / 26);
+    line-height: 1.23;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
 
     @media screen and(min-width:1200px) {
       font-weight: 400;
       font-size: 30px;
-      line-height: calc(37 / 30);
-
-      text-transform: uppercase;
+      line-height: 1.23;
     }
   }
 }
 .footer-spitch__part {
   font-weight: 700;
   font-size: 34px;
-  line-height: calc(41 / 34);
+  line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 16px;
@@ -35,14 +32,14 @@
 
   @media screen and(min-width:768px) {
     font-size: 48px;
-    line-height: calc(59 / 48);
+    line-height: 1.22;
     letter-spacing: 0.06em;
     margin-top: 9px;
   }
 
   @media screen and(min-width:1200px) {
     font-size: 58px;
-    line-height: calc(71 / 58);
+    line-height: 1.22;
     margin-top: 14px;
   }
 }
@@ -50,7 +47,7 @@
 .contact__title {
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
   color: var(--dark-txt-cl);
 
   @media screen and (min-width: 768px) {
@@ -66,7 +63,7 @@
 .contact__tel {
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
 
   color: var(--light-txt-cl);
 
@@ -83,7 +80,7 @@
 .footer-basement__rights {
   font-weight: 700;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1.52;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +89,6 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    align-items: center;
     justify-content: center;
   }
 
@@ -103,7 +99,6 @@
 
 .footer__title {
   width: 234px;
-  padding-top: 39px;
   padding-bottom: 42px;
 
   @media screen and(min-width:768px) {
@@ -128,6 +123,8 @@
   &:hover,
   &:focus {
     fill: var(--socials-focus-cl);
+    width: 35px;
+    height: 35px;
   }
 
   @media screen and (min-width: 768px) {
