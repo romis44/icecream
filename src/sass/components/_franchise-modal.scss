@@ -1,0 +1,89 @@
+.franchise {
+    position: relative;
+
+    width: 280px;
+
+    background-color: var(--light-bg-cl);
+    border: 2px solid var(--modal-main-frame);
+    border-radius: 10px;
+
+    padding: 28px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        width: 568px;
+        padding: 32px 58px;
+    }
+}
+
+.close-modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.close-modal-icon {
+    fill: currentColor;
+    //It's necessary to change the linear to a cubik-bezier
+    @include transition(color, null, null, 250ms, linear);
+}
+
+.close-modal-button:hover,
+.close-modal-button:focus .close-modal-icon {
+    color: var(--focus-btn-cl);
+}
+
+.franchise__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    text-align: center;
+    color: var(--dark-txt-cl);
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 322px;
+
+        font-size: 20px;
+        line-height: calc(28 / 20);
+        margin: 0 auto 24px;
+    }
+}
+
+.franchise__text {
+    // font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: calc(22 / 16);
+
+    color: var(--dark-txt-cl);
+
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+
+        margin-bottom: 32px;
+    }
+}
