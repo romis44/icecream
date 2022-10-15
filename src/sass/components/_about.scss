@@ -1,11 +1,24 @@
 .about {
   padding-bottom: 42.23px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 48.12px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
 }
 .about__text-lable {
   margin-bottom: 12px;
-  @include font(Montserrat, 18px, 700, 1.22, 0, var(--light-txt-cl));
+  @include font(var(--main-font), 18px, 700, 1.22, 0, var(--light-txt-cl));
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .about__title {
@@ -16,10 +29,35 @@
   text-transform: uppercase;
   max-width: 200px;
   text-align: center;
-  @include font(Seymour One, 30px, 400, 1.27, 0.04, var(--light-txt-cl));
+  @include font(
+    var(--secondary-font),
+    30px,
+    400,
+    1.26,
+    0.04,
+    var(--light-txt-cl)
+  );
 
   @media screen and (min-width: 768px) {
-    width: 100%;
+    margin-bottom: 72px;
+    min-width: 454px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 82px;
+    font-size: 36px;
+  }
+}
+
+.about__tablet-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
   }
 }
 
@@ -34,10 +72,16 @@
   border-radius: 50%;
   width: 278px;
   height: 278px;
-  background-image: linear-gradient (var(--modal-oval-linear-gradient-yellow));
-  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  background-image: url('../images/about/img2-sm_@1x.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/about/img2-sm_@2x.png');
+  }
 
   @media screen and (min-width: 768px) {
     width: 335px;
@@ -50,15 +94,15 @@
   top: 21.82px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url('../images/about/img-sm@1x.jpg');
-  border-radius: 1038.58px;
-  border-color: transparent;
-  background-size: cover;
+  margin-bottom: 40px;
+  border-radius: 50%;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/about/img-sm@2x.jpg');
+  @media screen and (min-width: 768px) {
+    width: 334.65px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
   }
 }
 
@@ -66,17 +110,47 @@
   min-width: 220px;
   padding-left: 50px;
   padding-right: 50px;
+  @media screen and (min-width: 768px) {
+    width: auto;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 463px;
+  }
 }
 .about__paragrahp {
   margin-bottom: 20px;
 }
 .about__text {
   text-align: center;
-  @include font(Montserrat, 12px, 400, 1.75, 0.04, var(--light-txt-cl));
+  @include font(var(--main-font), 12px, 400, 1.76, 0.04, var(--light-txt-cl));
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
 }
 .about__text--middle {
   line-height: 1.62;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
+
+.about__text--lower {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+
+    @include font(var(--main-font), 12px, 400, 1.92, 0.04, var(--light-txt-cl));
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
 .read-more__btn {
   display: flex;
   align-items: center;
@@ -92,8 +166,29 @@
   border-width: 0;
   text-align: center;
   gap: 8.83px;
+  @include font(var(--main-font), 14px, 600, 1.29, 0, var(--dark-txt-cl));
+  @include transition(
+    background-color,
+    color,
+    null,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 
-  @include font(var(--main-font), 14px, 600, 1.29, none, var(--dark-txt-cl));
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+
+  &:hover {
+    background-color: var(--focus-btn-cl);
+  }
+  &:focus {
+    background-color: var(--focus-btn-cl);
+    color: var(--light-txt-cl);
+  }
+  &:disabled {
+    background-color: var(--disabled-btn-cl);
+  }
 }
 .read-more__link {
 }
