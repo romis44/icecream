@@ -1,4 +1,5 @@
 .about {
+  padding-bottom: 42.23px;
 }
 .about__text-lable {
   margin-bottom: 12px;
@@ -26,19 +27,14 @@
   position: relative;
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 61.83px;
 }
 .about__circle-background {
   margin: 0 auto;
   border-radius: 50%;
   width: 278px;
   height: 278px;
-  background-image: linear-gradient(
-    0deg,
-    rgba(248, 210, 78, 0.7),
-    rgba(248, 210, 78, 0.7),
-    #d9d9d9
-  );
+  background-image: linear-gradient (var(--modal-oval-linear-gradient-yellow));
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,7 +47,7 @@
 
 .about__img {
   position: absolute;
-  top: 21px;
+  top: 21.82px;
   left: 50%;
   transform: translateX(-50%);
   background-image: url('../images/about/img-sm@1x.jpg');
