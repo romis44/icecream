@@ -1,83 +1,77 @@
 :root {
-  //  Fonts
-  --main-font: Montserrat, sans-serif;
-  --secondary-font: Seymour One, sans-serif;
-  --additional-font: Roboto, sans-serif;
+    //  Fonts
+    --main-font: Montserrat, sans-serif;
+    --secondary-font: Seymour One, sans-serif;
+    --additional-font: Roboto, sans-serif;
 
-  // Background colors
+    // Background colors
 
-  --main-bg-cl: #84a178;
-  --light-bg-cl: #fcfcfc;
-  --contacts-bg-cl: #ffffff;
-  --card-1-product-bg-cl: #aec6a5;
-  --card-2-product-bg-cl: #efd478;
-  --card-3-product-bg-cl: #d6936d;
-  --modal-oval-veight-bg-cl: #9cbe8f;
+    --main-bg-cl: #84a178;
+    --light-bg-cl: #fcfcfc;
+    --contacts-bg-cl: #ffffff;
+    --card-1-product-bg-cl: #aec6a5;
+    --card-2-product-bg-cl: #efd478;
+    --card-3-product-bg-cl: #d6936d;
+    --modal-oval-veight-bg-cl: #9cbe8f;
 
-  // Text colors
+    // Text colors
 
-  --dark-txt-cl: #131313;
-  --light-txt-cl: #fcfcfc;
-  --accent-txt-cl: #f8d24e;
-  --map-txt-cl: #d6936d;
-  --time-txt-cl: #ababab;
-  --copyright-txt-cl: #7a7a7a;
+    --dark-txt-cl: #131313;
+    --light-txt-cl: #fcfcfc;
+    --accent-txt-cl: #f8d24e;
+    --map-txt-cl: #d6936d;
+    --time-txt-cl: #ababab;
+    --copyright-txt-cl: #7a7a7a;
 
-  // Button colors
+    // Button colors
 
-  --default-btn-cl: #f8d24e;
-  --focus_btn-cl: #0a8817;
-  --disabled-btn-cl: #ababab;
+    --default-btn-cl: #f8d24e;
+    --focus-btn-cl: #0a8817;
+    --disabled-btn-cl: #ababab;
 
-  // Icon colors
+    // Icon colors
 
-  --icon-cl: #000000;
-  --icon-bg-cl: #f8d24e;
+    --icon-cl: #000000;
+    --icon-bg-cl: #f8d24e;
 
-  // Socials colors
+    // Socials colors
 
-  --socials-bg-cl: #f8d24e;
-  --socials-default-cl: #84a178;
-  --socials-focus-cl: white;
+    --socials-bg-cl: #f8d24e;
+    --socials-default-cl: #84a178;
+    --socials-focus-cl: white;
 
-  // Arrow colors
+    // Arrow colors
 
-  --arrow-cl: #131313;
-  --arrow-shadow-cl: rgba(0, 0, 0, 0.25);
+    --arrow-cl: #131313;
+    --arrow-shadow-cl: rgba(0, 0, 0, 0.25);
 
-  // Responce colors
+    // Responce colors
 
-  --responce-active-ellipse: #84a178;
-  --responce-disabled-ellipse: #d9d9d9;
+    --responce-active-ellipse: #84a178;
+    --responce-disabled-ellipse: #d9d9d9;
 
-  // Modal colors
+    // Modal colors
 
-  --modal-main-frame: #f8d24e;
-  --modal-registration-frame: #84a178;
-  --modal-registration-bg-cl: rgba(248, 210, 78, 0.1);
+    --modal-main-frame: #f8d24e;
+    --modal-registration-frame: #84a178;
+    --modal-registration-bg-cl: rgba(248, 210, 78, 0.1);
 
-  // Modal linear gradients
+    // Modal linear gradients
 
-  --modal-oval-linear-gradient-green: (
-    0deg,
-    rgba(156, 190, 143, 0.7),
-    rgba(156, 190, 143, 0.7)
-  );
-  --modal-oval-linear-gradient-yellow: (
-    0deg,
-    rgba(248, 210, 78, 0.7),
-    rgba(248, 210, 78, 0.7)
-  );
-  --modal-oval-linear-gradient-brown: (
-    0deg,
-    rgba(213, 117, 63, 0.7),
-    rgba(213, 117, 63, 0.7)
-  );
+    --modal-oval-linear-gradient-green: (0deg,
+            rgba(156, 190, 143, 0.7),
+            rgba(156, 190, 143, 0.7));
+    --modal-oval-linear-gradient-yellow: (0deg,
+            rgba(248, 210, 78, 0.7),
+            rgba(248, 210, 78, 0.7));
+    --modal-oval-linear-gradient-brown: (0deg,
+            rgba(213, 117, 63, 0.7),
+            rgba(213, 117, 63, 0.7));
 
-  //shadows
+    //shadows
 
-  --modal-drop-shadow-rectangle: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-  --modal-box-shadow-img: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-  --modal-box-shadow-ingredients: 0px 6px 20px rgba(10, 136, 23, 0.25);
-  --contacts-products-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    --modal-drop-shadow-rectangle: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    --modal-box-shadow-img: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    --modal-box-shadow-ingredients: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    --contacts-products-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
