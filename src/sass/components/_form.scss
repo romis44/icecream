@@ -38,10 +38,14 @@
     line-height: 140%;
     color: var(--dark-txt-cl);
 
-    padding: 12px 8px;
+    padding: 8px 12px;
 
     //It's necessary to change the linear to a cubik-bezier
     @include transition(outline, border, null, 250ms, linear);
+
+    @media screen and (min-width: 768px) {
+        padding: 11px 16px;
+    }
 
     &:not(:focus):not(:placeholder-shown):invalid {
         border: 1px solid red;
@@ -49,6 +53,10 @@
 
     &:focus-visible {
         outline: 2px solid var(--main-bg-cl);
+    }
+
+    &::placeholder {
+        color: var(--dark-txt-cl);
     }
 }
 
@@ -66,17 +74,23 @@
     line-height: 140%;
     color: var(--dark-txt-cl);
 
-    padding: 12px 8px;
+    padding: 8px 12px;
     //It's necessary to change the linear to a cubik-bezier
     @include transition(outline, null, null, 250ms, linear);
 
     @media screen and (min-width: 768px) {
         width: 368px;
         height: 84px;
+
+        padding: 11px 16px;
     }
 
     &:focus-visible {
         outline: 2px solid var(--main-bg-cl);
+    }
+
+    &::placeholder {
+        color: var(--dark-txt-cl);
     }
 }
 
