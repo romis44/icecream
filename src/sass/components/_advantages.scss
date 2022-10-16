@@ -2,7 +2,7 @@
     //phone
     padding-top: 21px;
     padding-bottom: 30px;
-
+    background-color: var(--socials-default-cl);
     //tablet
     @media screen and(min-width:768px) {
         padding-top: 24px;
@@ -74,8 +74,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-
-
+    background-color: var(--icon-bg-cl); 
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
@@ -96,7 +95,51 @@
     }
 
 }
-// img
+.cow__img::before {
+    background-image:url("/src/images/advantages/advantages-2@1x.png");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("/src/images/advantages/advantages-1@2x.png");
+        }
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 36px 36px;
+
+    }
+
+.gantel__img::before{
+
+
+    background-image: url("/src/images/advantages/advantages-2@1x.png");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("/src/images/advantages/advantages-2@2x.png");
+        }
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 36px 36px;
+
+    }
+
+.ice__img::before{
+
+    background-image: url("/src/images/advantages/advantages-3@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("/src/images/advantages/advantages-3@2x.png");
+    }
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 36px 36px;
+
+}
         .advantages__quantity {
             //phone
             @include font-source(36px, calc(42 / 36), 700);
@@ -126,12 +169,11 @@
             }
     
         }
-    
         .advantages__subtitle {
     
             //phone
             @include font-source(12px, calc(20 / 12), 700);
-    
+  
             text-align: center;
     
             color: var(--light-txt-cl);
@@ -147,7 +189,7 @@
                 width: 152px;
             }
     
-            //desctop
+            // desctop
             @media screen and(min-width:1200px) {
                 @include font-source(16px, calc(28 / 16), 400);
                 letter-spacing: 0.02em;
