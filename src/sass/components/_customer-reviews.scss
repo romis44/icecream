@@ -1,5 +1,5 @@
 .customer__slider {
-  // width: 350px;
+  max-width: 350px;
   height: 500px;
   padding: 20px;
   text-align: center;
@@ -9,12 +9,12 @@
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
     height: 500px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    max-width: 1200px;
     height: 500px;
   }
 }
@@ -66,7 +66,7 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: calc(26 / 14);
-    width: 705px;
+    width: 650px;
     margin-bottom: 32px;
     padding: 28px 80px;
     border-radius: 24px;
