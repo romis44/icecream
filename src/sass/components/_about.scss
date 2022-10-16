@@ -1,6 +1,7 @@
 .about {
   padding-top: 0;
   padding-bottom: 42px;
+
   @media screen and (min-width: 768px) {
     padding-bottom: 48px;
   }
@@ -55,14 +56,17 @@
 
 .about__illustration {
   position: relative;
+  margin-bottom: 40px;
   width: 100%;
-  height: auto;
-  margin-bottom: 62px;
+  height: 300px;
+
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+    height: 360.53px;
   }
   @media screen and (min-width: 1200px) {
+    padding-bottom: 39px;
     width: auto;
+    height: 529px;
   }
 }
 .about__circle-background {
@@ -126,9 +130,6 @@
 
 .about__description {
   min-width: 220px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     max-width: 334px;
@@ -141,6 +142,8 @@
 
 .about__text {
   display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: center;
   margin-bottom: 3.83px;
   @include font(var(--main-font), 12px, 400, 1.76, 0.04, var(--light-txt-cl));
@@ -148,14 +151,18 @@
   @media screen and (min-width: 768px) {
     text-align: start;
     margin-bottom: 8px;
+    padding: 0;
   }
+
   @media screen and (min-width: 1200px) {
+    padding: 0;
     font-size: 16px;
   }
 
   &--middle {
     line-height: 1.62;
     margin-bottom: 20px;
+
     @media screen and (min-width: 1200px) {
       font-size: 14px;
     }
