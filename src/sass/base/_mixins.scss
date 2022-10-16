@@ -23,6 +23,19 @@
   color: $fc;
 }
 
+@mixin font-source($size: false, $lh: false, $weight: false) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+}
 @mixin transition($one, $two, $three, $time, $func) {
   transition-property: $one, $two, $three;
   transition-duration: $time;
