@@ -1,69 +1,77 @@
 :root {
-     // Background colors
+    //  Fonts
+    --main-font: Montserrat, sans-serif;
+    --secondary-font: Seymour One, sans-serif;
+    --additional-font: Roboto, sans-serif;
 
-     --main-bg-cl: #84A178;
-     --light-bg-cl: #FCFCFC;
-     --contacts-bg-cl: #FFFFFF;
-     --card-1-product-bg-cl: #AEC6A5;
-     --card-2-product-bg-cl: #EFD478;
-     --card-3-product-bg-cl: #D6936D;
-     --modal-oval-veight-bg-cl:  #9CBE8F;
- 
- 
-     // Text colors
- 
-     --dark-txt-cl: #131313;
-     --light-txt-cl: #FCFCFC;
-     --accent-txt-cl: #F8D24E;
-     --map-txt-cl: #D6936D;
-     --time-txt-cl: #ABABAB;
-     --copyright-txt-cl: #7A7A7A;
- 
-     // Button colors
- 
-     --default-btn-cl: #F8D24E;
-     --focus_btn-cl: #0A8817;
-     --disabled-btn-cl: #ABABAB;
- 
-     // Icon colors
- 
-     --icon-cl: #000000;
-     --icon-bg-cl:#F8D24E;
- 
-     // Socials colors
- 
-     --socials-bg-cl: #F8D24E;
-     --socials-default-cl: #84A178;
-     --socials-focus-cl: white;
- 
-     // Arrow colors
- 
-     --arrow-cl: #131313;
-     --arrow-shadow-cl: rgba(0, 0, 0, 0.25);
- 
-     // Responce colors
- 
-     --responce-active-ellipse: #84A178;
-     --responce-disabled-ellipse: #D9D9D9;
- 
-     // Modal colors
-     
-     --modal-main-frame: #F8D24E;
-     --modal-registration-frame: #84A178;
-     --modal-registration-bg-cl: rgba(248, 210, 78, 0.1);
- 
- 
-     // Modal linear gradients
- 
-     --modal-oval-linear-gradient-green: (0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
-     --modal-oval-linear-gradient-yellow: (0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-     --modal-oval-linear-gradient-brown: (0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
- 
-     //shadows
- 
-     --modal-drop-shadow-rectangle: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-     --modal-box-shadow-img: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-     --modal-box-shadow-ingredients: 0px 6px 20px rgba(10, 136, 23, 0.25);
-     --contacts-products-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
- 
+    // Background colors
+
+    --main-bg-cl: #84a178;
+    --light-bg-cl: #fcfcfc;
+    --contacts-bg-cl: #ffffff;
+    --card-1-product-bg-cl: #aec6a5;
+    --card-2-product-bg-cl: #efd478;
+    --card-3-product-bg-cl: #d6936d;
+    --modal-oval-veight-bg-cl: #9cbe8f;
+
+    // Text colors
+
+    --dark-txt-cl: #131313;
+    --light-txt-cl: #fcfcfc;
+    --accent-txt-cl: #f8d24e;
+    --map-txt-cl: #d6936d;
+    --time-txt-cl: #ababab;
+    --copyright-txt-cl: #7a7a7a;
+
+    // Button colors
+
+    --default-btn-cl: #f8d24e;
+    --focus-btn-cl: #0a8817;
+    --disabled-btn-cl: #ababab;
+
+    // Icon colors
+
+    --icon-cl: #000000;
+    --icon-bg-cl: #f8d24e;
+
+    // Socials colors
+
+    --socials-bg-cl: #f8d24e;
+    --socials-default-cl: #84a178;
+    --socials-focus-cl: white;
+
+    // Arrow colors
+
+    --arrow-cl: #131313;
+    --arrow-shadow-cl: rgba(0, 0, 0, 0.25);
+
+    // Responce colors
+
+    --responce-active-ellipse: #84a178;
+    --responce-disabled-ellipse: #d9d9d9;
+
+    // Modal colors
+
+    --modal-main-frame: #f8d24e;
+    --modal-registration-frame: #84a178;
+    --modal-registration-bg-cl: rgba(248, 210, 78, 0.1);
+
+    // Modal linear gradients
+
+    --modal-oval-linear-gradient-green: (0deg,
+            rgba(156, 190, 143, 0.7),
+            rgba(156, 190, 143, 0.7));
+    --modal-oval-linear-gradient-yellow: (0deg,
+            rgba(248, 210, 78, 0.7),
+            rgba(248, 210, 78, 0.7));
+    --modal-oval-linear-gradient-brown: (0deg,
+            rgba(213, 117, 63, 0.7),
+            rgba(213, 117, 63, 0.7));
+
+    //shadows
+
+    --modal-drop-shadow-rectangle: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+    --modal-box-shadow-img: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    --modal-box-shadow-ingredients: 0px 6px 20px rgba(10, 136, 23, 0.25);
+    --contacts-products-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
