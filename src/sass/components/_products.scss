@@ -110,7 +110,7 @@
     
     &:before{
         content: '';
-        width: 200px;
+        width: 201px;
         height: 200px;
         border-radius: 50%;
         display: inline-block;
@@ -127,6 +127,7 @@
         }
 
         @media screen and (min-width: 768px) {
+            height: 196px;
             background-image: url(../images/products/img1-md_@1x.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -176,6 +177,7 @@
         }
 
         @media screen and (min-width: 768px) {
+            height: 196px;
             background-image: url(../images/products/img2-md_@1x.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -224,6 +226,7 @@
         }
 
         @media screen and (min-width: 768px) {
+            height: 196px;
             background-image: url(../images/products/img3-md_@1x.png);
 
             @media (min-device-pixel-ratio: 2),
