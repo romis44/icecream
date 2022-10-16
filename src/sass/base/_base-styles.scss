@@ -26,15 +26,23 @@ body {
 
 // Анимация-Gallery
 @keyframes myImgAnimation {
+  0% {
+    opacity: 0;
+  }
 
-  0% { opacity: 0; }
+  12.12% {
+    opacity: 1;
+  }
 
-  12.12% { opacity: 1; }
+  35.35% {
+    opacity: 1;
+  }
 
-  35.35% { opacity: 1; }
+  45.45% {
+    opacity: 0;
+  }
 
-  45.45% { opacity: 0; }
-
-  100% { opacity: 0; }
-
+  100% {
+    opacity: 0;
+  }
 }
