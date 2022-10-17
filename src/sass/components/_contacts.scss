@@ -1,4 +1,5 @@
 .contacts {
+    position: relative;
     @include section($pt: null, $pb: 40px);
     background-color: var(--main-bg-cl);
 
@@ -9,15 +10,20 @@
 
 .contacts__list {
     margin-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-27%);
 
    
     @media screen and (min-width: 768px) {
     @include list(flex, 16px, row, nowrap);
+    transform: translateY(-55%);
     }
 
     // desktop styles
     @media screen and (min-width: 1200px) {
     @include list(null, 32px, null, null);
+    transform: translateY(-15%);
     }
 
 
@@ -146,7 +152,9 @@
     }
 
     @media screen and (min-width:768px) {
-        margin-bottom: 12px;
+        &:nth-child(2) {
+            margin-bottom: 12px;
+        }
     }
 
 }
@@ -192,6 +200,7 @@
 .contacts__button {
     display: block;
 
+    transform: translateY(-342%);
 
 
     @media screen and (min-width:768px){
@@ -200,8 +209,11 @@
         align-items: center;
         gap: 16px;
         margin: 0 auto;
+        transform: translateY(-650%);
     }
-
+    @media screen and (min-width:1200px){
+        transform: translateY(-200%);
+    }
 
 }
 .contacts__icons {
