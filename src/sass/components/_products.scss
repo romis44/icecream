@@ -3,6 +3,7 @@
     background-image: url(../images/customers-background/customersreviews-bg_480@1x.png);
     background-color: var(--light-bg-cl);
     background-size:  contain;
+    background-position: center;
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -37,13 +38,13 @@
     @media screen and (min-width: 1200px) {
         padding-bottom: 66px;
 
-        background-image: url(../images/customers-background/customersreviews-bg_1920@1x.png);
+        background-image: url(../images/customers-background/customersreviews-bg_section2-1920@1x.png);
         
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-size: 1920px;
-            background-image: url(../images/customers-background/customersreviews-bg_1920@2x.png);
+            background-image: url(../images/customers-background/customersreviews-bg_section2-1920@2x.png);
         }
     }
 }
