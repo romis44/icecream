@@ -1,11 +1,51 @@
 .products {
     @include section(60px, 60px);
-    // background-image: url(../../images/products/);
+    background-image: url(../images/customers-background/customersreviews-bg_480@1x.png);
+    background-color: var(--light-bg-cl);
+    background-size:  contain;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/customers-background/customersreviews-bg_480@2x.png);
+    }
+
+    @media screen and (min-width: 480px) {
+        background-size:  auto;
+        background-image: url(../images/customers-background/customersreviews-bg_768@1x.png);
+        
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-size:  768px;
+            background-image: url(../images/customers-background/customersreviews-bg_768@2x.png);
+        }
+    }
+
     @media screen and (min-width: 768px) {
         padding-bottom: 82px;
+
+        background-image: url(../images/customers-background/customersreviews-bg_1200@1x.png);
+        
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-size: 1200px;
+            background-image: url(../images/customers-background/customersreviews-bg_1200@2x.png);
+        }
     }
     @media screen and (min-width: 1200px) {
-        padding-bottom: 60px;
+        padding-bottom: 66px;
+
+        background-image: url(../images/customers-background/customersreviews-bg_section2-1920@1x.png);
+        
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-size: 1920px;
+            background-image: url(../images/customers-background/customersreviews-bg_section2-1920@2x.png);
+        }
     }
 }
 
