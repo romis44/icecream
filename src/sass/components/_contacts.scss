@@ -1,10 +1,17 @@
 .contacts {
     position: relative;
+height: 1441px;
     @include section($pt: null, $pb: 40px);
     background-color: var(--main-bg-cl);
 
+
+    @media screen and (min-width: 768px){
+height: 670;
+    } 
+
     @media screen and (min-width: 1200px) {
     @include section($pt: null, $pb: 120px);  
+    height: 235px;
     }
 }
 
