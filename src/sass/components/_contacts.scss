@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-height: 1048px;
+height: 1115px;
     @include section($pt: null, $pb: 40px);
     background-color: var(--main-bg-cl);
 
@@ -99,7 +99,6 @@ height: 340px;
 .contacts__link {
     @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--map-txt-cl));
     text-decoration: none;
-    cursor: alias;
     @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
     &:hover,
@@ -191,12 +190,12 @@ height: 340px;
     text-decoration: none;
 
     @media screen and (min-width:768px){
-    @include font(null, 14px, null, calc(26/14), null, null);
+    @include font(null, 14px, null, calc(26/14), 0.04em, null);
     }
         
         
     @media screen and (min-width: 1200px) {
-    @include font(null, 16px, null, calc(29/16), null, null);
+    @include font(null, 16px, null, calc(29/16), 0.04em, null);
     } 
 }
 
@@ -243,7 +242,7 @@ height: 340px;
     justify-content: center;
     align-items: center;
     background: transparent;
-    cursor: pointer;
+
     border: 2px solid var(--default-btn-cl);
     border-radius: 10px; 
     @include transition(color, border-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
