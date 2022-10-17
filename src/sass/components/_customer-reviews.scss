@@ -1,3 +1,50 @@
+.customer {
+  background-color: var(--light-txt-cl);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  height: 1045px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/customers-background/customersreviews-bg_480@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customers-background/customersreviews-bg_480@2x.png);
+  }
+
+  // Tablet images
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/customers-background/customersreviews-bg_768@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers-background/customersreviews-bg_768@2x.png);
+    }
+  }
+
+  // Desktop images
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/customers-background/customersreviews-bg_1200@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/customers-background/customersreviews-bg_1200@2x.png);
+    }
+  }
+
+  @media screen and(min-width:768px) {
+    height: 959px;
+  }
+
+  @media screen and(min-width:1200px) {
+    height: 1013px;
+  }
+}
 .customer__slider {
   max-width: 350px;
   height: 500px;
@@ -40,9 +87,17 @@
   transform-origin: center center;
   transform: scale(1);
   flex-direction: column;
+  margin-top: 450px;
 
-  @media screen and(min-width:768px) {
+  margin-top: 180px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 218px;
     height: 430px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 451px;
   }
 }
 
@@ -140,14 +195,16 @@ a.customer__slide-next,
 .customer__slider-nav {
   box-sizing: border-box;
   position: absolute;
-  bottom: 5%;
   left: 50%;
   width: 200px;
   margin-left: -100px;
   text-align: center;
 
   @media screen and(min-width:768px) {
-    bottom: 15%;
+    bottom: -150px;
+  }
+  @media screen and(min-width:1200px) {
+    bottom: -400px;
   }
 }
 
