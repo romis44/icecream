@@ -1,137 +1,308 @@
-.form__group {
-    margin: 0 auto;
-    margin-bottom: 24px;
+.form__list {
+  margin-bottom: 24px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+
+    margin-bottom: 40px;
+  }
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__wrapper {
+  position: relative;
+
+  height: 200px;
+  width: 132px;
+
+  margin: 0 auto;
+
+  border: 1px dashed transparent;
+}
+
+.form__ellipse {
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  height: 132px;
+  width: 132px;
+
+  border-radius: 50%;
+
+  // background: --modal-oval-linear-gradient-green, #D9D9D9;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+
+  // box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  box-shadow: var(--modal-box-shadow-ingredients);
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 0;
+
+    width: 132px;
+    height: 132px;
+
+    background-image: url('/src/images/modal/img-buy1_@1x.png');
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/modal/img-buy1_@2x.png');
+
+      background-size: 132px 132px;
     }
+  }
+
+  &--yellow::before {
+    background-image: url('/src/images/modal/img-buy2_@1x.png');
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/modal/img-buy2_@2x.png');
+
+      background-size: 132px 132px;
+    }
+  }
+
+  &--red::before {
+    background-image: url('/src/images/modal/img-buy3_@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/modal/img-buy3_@2x.png');
+
+      background-size: 132px 132px;
+    }
+  }
+
+  &--yellow {
+    // background: var(--modal-oval-linear-gradient-yellow), #D9D9D9;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+
+  &--red {
+    // background: var(--modal-oval-linear-gradient-brown), #D9D9D9;
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.form__checkbox:checked + .form__rectangle {
+  // background-color: #96AF8C;
+  background-color: var(--card-1-product-bg-cl);
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+.form__checkbox:checked + .form__rectangle--yellow {
+  background-color: var(--card-2-product-bg-cl);
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+.form__checkbox:checked + .form__rectangle--red {
+  background-color: var(--card-3-product-bg-cl);
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+.form__rectangle {
+  height: 136px;
+  width: 132px;
+
+  background-color: var(--light-bg-cl);
+
+  border: 2px solid var(--card-1-product-bg-cl);
+  border-radius: 15.7808px;
+
+  margin-top: 64px;
+
+  //It's necessary to change the linear to a cubik-bezier
+  @include transition(background-color, box-shadow, null, 250ms, linear);
+
+  &--yellow {
+    border-color: var(--card-2-product-bg-cl);
+  }
+
+  &--red {
+    border-color: var(--card-3-product-bg-cl);
+  }
+}
+
+.form__checkbox:focus-visible + .form__rectangle {
+  outline: 2px solid black;
+}
+
+.form__product-title {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--dark-txt-cl);
+
+  margin-top: 93px;
+}
+
+.form__group {
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .form__label {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 
-    &:not(:last-child) {
-        margin-bottom: 12px;
-
-        @media screen and (min-width: 768px) {
-            margin-bottom: 16px;
-        }
-    }
+  &:not(:last-child) {
+    margin-bottom: 12px;
 
     @media screen and (min-width: 768px) {
-        width: 368px;
+      margin-bottom: 16px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  }
 }
 
 .form__input {
-    width: 100%;
-    height: 32px;
+  width: 100%;
+  height: 32px;
 
-    background-color: rgba(248, 210, 78, 0.1);
+  background-color: var(--modal-registration-bg-cl);
 
-    border: 1px solid var(--main-bg-cl);
-    border-radius: 10px;
+  border: 1px solid var(--main-bg-cl);
+  border-radius: 10px;
 
-    font-size: 12px;
-    line-height: 140%;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--dark-txt-cl);
+
+  padding: 8px 12px;
+
+  //It's necessary to change the linear to a cubik-bezier
+  @include transition(outline, border, null, 250ms, linear);
+
+  @media screen and (min-width: 768px) {
+    padding: 11px 16px;
+  }
+
+  &:not(:focus):not(:placeholder-shown):invalid {
+    border: 1px solid red;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--main-bg-cl);
+  }
+
+  &::placeholder {
     color: var(--dark-txt-cl);
-
-    padding: 8px 12px;
-
-    //It's necessary to change the linear to a cubik-bezier
-    @include transition(outline, border, null, 250ms, linear);
-
-    @media screen and (min-width: 768px) {
-        padding: 11px 16px;
-    }
-
-    &:not(:focus):not(:placeholder-shown):invalid {
-        border: 1px solid red;
-    }
-
-    &:focus-visible {
-        outline: 2px solid var(--main-bg-cl);
-    }
-
-    &::placeholder {
-        color: var(--dark-txt-cl);
-    }
+  }
 }
 
 .form__textarea {
-    resize: none;
+  resize: none;
 
-    width: 100%;
-    height: 64px;
+  width: 100%;
+  height: 64px;
 
-    background-color: rgba(248, 210, 78, 0.1);
-    border: 1px solid var(--main-bg-cl);
-    border-radius: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--main-bg-cl);
+  border-radius: 10px;
 
-    font-size: 12px;
-    line-height: 140%;
+  font-size: 12px;
+  line-height: 140%;
+  color: var(--dark-txt-cl);
+
+  padding: 8px 12px;
+  //It's necessary to change the linear to a cubik-bezier
+  @include transition(outline, null, null, 250ms, linear);
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    height: 84px;
+
+    padding: 11px 16px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--main-bg-cl);
+  }
+
+  &::placeholder {
     color: var(--dark-txt-cl);
-
-    padding: 8px 12px;
-    //It's necessary to change the linear to a cubik-bezier
-    @include transition(outline, null, null, 250ms, linear);
-
-    @media screen and (min-width: 768px) {
-        width: 368px;
-        height: 84px;
-
-        padding: 11px 16px;
-    }
-
-    &:focus-visible {
-        outline: 2px solid var(--main-bg-cl);
-    }
-
-    &::placeholder {
-        color: var(--dark-txt-cl);
-    }
+  }
 }
 
 .button-submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    width: 114px;
-    height: 42px;
+  width: 114px;
+  height: 42px;
 
-    background-color: var(--default-btn-cl);
-    border-radius: 10px;
-    border: none;
+  background-color: var(--default-btn-cl);
+  border-radius: 10px;
+  border: none;
 
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    color: var(--dark-txt-cl);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: var(--dark-txt-cl);
 
-    cursor: pointer;
+  // cursor: pointer;
 
-    padding: 0;
+  padding: 0;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    //It's necessary to change the linear to a cubik-bezier
-    @include transition(background-color, color, null, 250ms, linear);
+  //It's necessary to change the linear to a cubik-bezier
+  @include transition(background-color, color, null, 250ms, linear);
 
+  @media screen and (min-width: 768px) {
+    width: 121px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 121px;
-    }
+  &:hover {
+    background-color: var(--focus-btn-cl);
+  }
 
-    &:hover {
-        background-color: var(--focus-btn-cl);
-    }
-
-    &:focus {
-        background-color: var(--focus-btn-cl);
-        color: var(--light-bg-cl);
-        outline: none;
-    }
+  &:focus {
+    background-color: var(--focus-btn-cl);
+    color: var(--light-bg-cl);
+    outline: none;
+  }
 }

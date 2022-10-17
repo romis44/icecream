@@ -1,0 +1,298 @@
+.contacts {
+    position: relative;
+height: 1115px;
+    @include section($pt: null, $pb: 40px);
+    background-color: var(--main-bg-cl);
+
+
+    @media screen and (min-width: 768px){
+height: 340px;
+    } 
+
+    @media screen and (min-width: 1200px) {
+    @include section($pt: null, $pb: 120px); 
+    height: 666px; 
+    }
+}
+
+.contacts__list {
+    margin-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-27%);
+
+   
+    @media screen and (min-width: 768px) {
+    @include list(flex, 16px, row, nowrap);
+    transform: translateY(-55%);
+    }
+
+    // desktop styles
+    @media screen and (min-width: 1200px) {
+    @include list(null, 32px, null, null);
+    transform: translateY(-15%);
+    }
+
+
+}
+.contacts__item {
+    background-color: var(--contacts-bg-cl);
+    box-shadow: var(--contacts-products-box-shadow);
+    padding: 40px 32px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+       &:last-child{
+           margin-bottom: 0;}
+
+
+    @media screen and (min-width:768px){
+    // flex-basis: calc((100% - 2*16px) / 3);
+    // display: flex;
+    // gap: 16px;
+     margin-bottom: 0;
+    }
+    
+    
+    @media screen and (min-width: 1200px) {
+    // flex-basis: calc((100% - 2*32px) / 3);
+    // gap: 32px;
+    }   
+
+}
+.contacts__subtitle {
+    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background: var(--default-btn-cl);
+    border-radius: 4px;
+
+    @media screen and (min-width:768px){
+    @include font(null, 16px, null, calc(30/16), null, null);
+    margin-bottom: 32px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+}
+.contacts__article {
+    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
+    margin: 0;
+    margin-bottom: 8px;
+
+    @media screen and (min-width:768px){
+    @include font(null, 14px, null, calc(26/14), null, null);
+    margin-bottom: 12;
+    }
+        
+        
+    @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(30/16), null, null);
+    margin-bottom: 18;
+    } 
+
+}
+
+.contacts__link {
+    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--map-txt-cl));
+    text-decoration: none;
+    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+    &:hover,
+    &:focus {
+        color: var(--focus-btn-cl);
+    }
+
+
+    @media screen and (min-width:768px){
+    @include font(null, 14px, null, calc(26/14), null, null);
+    }
+            
+            
+    @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(30/16), null, null);
+    } 
+}
+
+.contacts__box {
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+
+
+    @media screen and (min-width:768px){
+    margin-bottom: 26px;
+    padding-bottom: 26px;
+    }
+            
+            
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    }    
+}
+
+.contacts__info {
+    border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+
+@media screen and (min-width:768px){
+    margin-bottom: 26px;
+    padding-bottom: 26px;
+    }
+                
+                
+@media screen and (min-width: 1200px) {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    }
+
+}
+.contacts__time {
+    &:nth-child(2) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width:768px) {
+        &:nth-child(2) {
+            margin-bottom: 12px;
+        }
+    }
+
+}
+
+
+
+.contacts__text {
+    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
+    margin: 0;
+
+    @media screen and (min-width:768px){
+    @include font(null, 14px, null, calc(26/14), null, null);
+    }
+        
+        
+    @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(30/16), null, null);
+    } 
+}
+
+.time {
+    color: var(--time-txt-cl);
+    }
+
+.contacts__connexion {
+    @include font(var(--main-font), 12px, 500, calc(18/12), 0.04em, var(--dark-txt-cl));
+    text-decoration: none;
+
+    @media screen and (min-width:768px){
+    @include font(null, 14px, null, calc(26/14), 0.04em, null);
+    }
+        
+        
+    @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(29/16), 0.04em, null);
+    } 
+}
+
+
+
+// buttons for contacts
+
+.contacts__button {
+    display: block;
+
+    transform: translateY(-325%);
+
+
+    @media screen and (min-width:768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin: 0 auto;
+        transform: translateY(-650%);
+    }
+    @media screen and (min-width:1200px){
+        transform: translateY(-200%);
+    }
+
+}
+.contacts__icons {
+    width: 12px;
+    height: 12px;
+    fill: var(--black-txt-cl);
+    @include transition(fill, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    &{
+        stroke: currentColor
+    }
+}
+
+
+.contacts__btn {
+    @include font(var(--main-font), 14px, 600, calc(18/14), 0.04em, var(--dark-txt-cl));
+    display: flex;
+    width: 196px;
+    height: 42px;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+    border: 2px solid var(--default-btn-cl);
+    border-radius: 10px; 
+    @include transition(color, border-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    margin: 0 auto;
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width:768px) {
+        margin: 0;
+    }
+}
+
+.contacts__btn:hover {
+    border-color: var(--focus-btn-cl);
+}
+
+.contacts__btn:focus {
+    border-color: var(--focus-btn-cl);
+    color: var(--light-txt-cl)
+}
+
+// .contacts__btn:focus + .contacts__icons {
+//     fill: var(--light-txt-cl);
+// }
+.current__btn {
+    border: none;
+    background-color: var(--default-btn-cl);
+    text-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    @include transition(color, background-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+
+    @media screen and (min-width:768px) {
+        text-shadow: none;
+    }
+}
+
+
+.current__btn:hover {
+    background-color: var(--focus-btn-cl);
+}
+
+.current__btn:focus {
+    background-color: var(--focus-btn-cl);
+    color: var(--light-txt-cl)
+}
+// .current__btn:focus + .contacts__icons {
+//     fill: var(--light-txt-cl);
+// }
+
+

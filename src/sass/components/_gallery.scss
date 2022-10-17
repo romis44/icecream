@@ -17,6 +17,14 @@
   &__set {
     position: relative;
     width: 100%;
+    top: -24px;
+
+    @media screen and (min-width: 768px) {
+      top: -164px;
+    }
+    @media screen and (min-width: 1200px) {
+      top: -100px;
+    }
   }
 
   &__img {
