@@ -89,104 +89,108 @@
 
 <section class="hero">
   <div class="container hero__container">
-    <div class="hero__wrapper">
-      <div class="hero-content">
-        <h1 class="hero-title">ice cream made with passion</h1>
-        <ul class="hero__list">
-          <li class="hero__item">
-            <a href="/src/index.html" class="hero__link"> Products</a>
-          </li>
-          <li class="hero__item">
-            <a href="/src/index.html" class="hero__link"> How it’s made?</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="hero-order">
-        <picture>
-          <!-- Desktop screen -->
-          <source
-            media="(min-width: 1200px)"
-            srcset="
-              /src/images/hero/img2-lg_@1x.png 1x,
-              /src/images/hero/img2-lg_@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- Tablet screen -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              /src/images/hero/img2-md_@1x.png 1x,
-              /src/images/hero/img2-md_@2x.png 2x
-            "
-            type="image/png"
-          />
-
-          <img
-            src="/src/images/hero/img2-lg_@1x.png"
-            alt="plate of ice cream"
-          />
-        </picture>
-        <div class="proverb">
-          <p class="proverb__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <button class="hero__arrow" aria-label="about Lorem" type="button">
-            <svg class="btn__svg" width="40">
-              <use href="/src/images/icon_sprite.svg#arrow"></use>
-            </svg>
-          </button>
-        </div>
+    <div>
+      <h1 class="hero-title">
+        ice cream <br />
+        made with <br />
+        <span class="hero__title hero__title--end">passion</span>
+      </h1>
+      <div class="hero__list">
+        <a href="/src/index.html" class="hero__btn-link hero__btn-link--border">
+          Products</a
+        >
+        <a
+          href="/src/index.html"
+          class="hero__btn-link hero__btn-link--noborder"
+        >
+          How it’s made?</a
+        >
       </div>
     </div>
 
-    <div class="hero-advertising">
-      <picture>
-        <!-- Desktop screen -->
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            /src/images/hero/img1-lg_@1x.png 1x,
-            /src/images/hero/img1-lg_@2x.png 2x
-          "
-          type="image/png"
-        />
-        <!-- Tablet screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            /src/images/hero/img1-md_@1x.png 1x,
-            /src/images/hero/img1-md_@2x.png 2x
-          "
-          type="image/png"
-        />
-        <!-- Mobile screen -->
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            /src/images/hero/img1-sm_@1x.png 1x,
-            /src/images/hero/img1-sm_@2x.png 2x
-          "
-          type="image/png"
-        />
-        <img src="/src/images/hero/img1-lg_@1x.png" alt="ice cream cone" />
-      </picture>
-
-      <div class="hero-statistics">
-        <ul class="hero-statistics__list">
-          <li class="hero-statistics__item">
-            <p class="hero-statistics__number">16</p>
-            <p class="hero-statistics__text">cafes</p>
-          </li>
-          <li class="hero-statistics__item">
-            <p class="hero-statistics__number">23</p>
-            <p class="hero-statistics__text">food trucks</p>
-          </li>
-        </ul>
-      </div>
+    <ul class="hero-statistics__list">
+      <li class="hero-statistics__item">
+        <span class="hero-statistics__number">16</span>
+        <span class="hero-statistics__text">cafes</span>
+      </li>
+      <li class="hero-statistics__item">
+        <span class="hero-statistics__number">23</span>
+        <span class="hero-statistics__text">food trucks</span>
+      </li>
+    </ul>
+    <div class="proverb">
+      <p class="proverb__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <button class="hero-arrow" aria-label="about Lorem" type="button">
+        <svg class="hero-arrow__icon" width="39" height="15">
+          <use href="/src/images/icon_sprite.svg#arrow"></use>
+        </svg>
+      </button>
     </div>
+    <picture class="hero__plate">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /src/images/hero/img2-lg_@1x.png 1x,
+          /src/images/hero/img2-lg_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/hero/img2-md_@1x.png 1x,
+          /src/images/hero/img2-md_@2x.png 2x
+        "
+        type="image/png"
+      />
+
+      <img
+        src="/src/images/hero/img2-lg_@1x.png"
+        alt="plate of ice cream"
+        class="hero__img-plate"
+      />
+    </picture>
+
+    <picture class="hero__ice">
+      <!-- Desktop screen -->
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          /src/images/hero/img1-lg_@1x.png 1x,
+          /src/images/hero/img1-lg_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /src/images/hero/img1-md_@1x.png 1x,
+          /src/images/hero/img1-md_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /src/images/hero/img1-sm_@1x.png 1x,
+          /src/images/hero/img1-sm_@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        src="/src/images/hero/img1-sm_@1x.png"
+        alt="ice cream cone"
+        class="header__img-face"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
 
