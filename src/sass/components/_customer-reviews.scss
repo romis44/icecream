@@ -1,12 +1,14 @@
 .customer {
   background-color: var(--light-txt-cl);
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1600px;
-  height: 1045px;
-  margin-left: auto;
-  margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1045px;
+    margin-left: auto;
+    margin-right: auto;
+
+
   background-image: url(../images/customers-background/customersreviews-bg_480@1x.png);
 
   @media (min-device-pixel-ratio: 2),
