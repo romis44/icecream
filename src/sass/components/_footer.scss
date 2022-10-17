@@ -86,8 +86,14 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
-
   color: var(--light-txt-cl);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--default-btn-cl);
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -141,17 +147,11 @@
   background-color: var(--socials-bg-cl);
   border-radius: 50%;
   fill: var(--socials-default-cl);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     fill: var(--socials-focus-cl);
-    width: 35px;
-    height: 35px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 34px;
-    height: 34px;
   }
 }
 
