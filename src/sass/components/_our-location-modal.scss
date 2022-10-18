@@ -1,0 +1,90 @@
+.our-locations {
+  position: relative;
+
+  width: 280px;
+
+  background-color: var(--light-bg-cl);
+  border: 2px solid var(--modal-main-frame);
+  border-radius: 10px;
+
+  padding: 28px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+
+.close-modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  padding: 0;
+
+  &:hover,
+  &:focus.close-modal-icon {
+    color: var(--focus-btn-cl);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.close-modal-icon {
+  fill: currentColor;
+  @include transition(color, null, null, 250ms, linear);
+}
+
+.our-locations__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--dark-txt-cl);
+
+  @media screen and(min-width:768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   display: flex;
+
+//   background-color: rgba(0, 0, 0, 0.1);
+
+//   transition: opacity 500ms, visibility 1000ms;
+// }
+
+// .is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+.loc-img {
+  margin-bottom: 24px;
+}
