@@ -1,71 +1,90 @@
-<div class="byu-now">
-    <button class="close-modal-button">
-        <svg class="close-modal-icon" width="16" height="16">
-            <use href="/src/images/icon_sprite.svg#close-modal"></use>
-        </svg>
+<div class="backdrop is-hidden" data-modal-by-now>
+  <div class="byu-now">
+    <button class="close-modal-button" data-modal-by-now-close>
+      <svg class="close-modal-icon" width="16" height="16">
+        <use href="/src/images/icon_sprite.svg#close-modal"></use>
+      </svg>
     </button>
-    <h2 class="byu-now__title">
-        Buy now
-    </h2>
+    <h2 class="byu-now__title">Buy now</h2>
     <form class="form" name="byu-now-form">
+      <ul class="form__list">
+        <li class="form__item">
+          <div class="form__wrapper">
+            <label class="form__product-label">
+              <div class="form__ellipse"></div>
+              <input
+                type="checkbox"
+                class="form__checkbox visually-hidden"
+                name="ice-cream"
+              />
+              <div class="form__rectangle">
+                <h3 class="form__product-title">ice cream</h3>
+              </div>
+            </label>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__wrapper">
+            <label class="form__product-label">
+              <div class="form__ellipse form__ellipse--yellow"></div>
+              <input
+                type="checkbox"
+                class="form__checkbox visually-hidden"
+                name="ice-coffee"
+              />
+              <div class="form__rectangle form__rectangle--yellow">
+                <h3 class="form__product-title">ice coffee</h3>
+              </div>
+            </label>
+          </div>
+        </li>
+        <li class="form__item">
+          <div class="form__wrapper">
+            <label class="form__product-label">
+              <div class="form__ellipse form__ellipse--red"></div>
+              <input
+                type="checkbox"
+                class="form__checkbox visually-hidden"
+                name="milkshake"
+              />
+              <div class="form__rectangle form__rectangle--red">
+                <h3 class="form__product-title">milkshake</h3>
+              </div>
+            </label>
+          </div>
+        </li>
+      </ul>
 
-        <ul class="form__list">
-            <li class="form__item">
-                <div class="form__wrapper">
-                    <label class="form__product-label">
-                        <div class="form__ellipse"></div>
-                        <input type="checkbox" class="form__checkbox visually-hidden" name="ice-cream">
-                        <div class="form__rectangle">
-                            <h3 class="form__product-title">
-                                ice cream
-                            </h3>
-                        </div>
-                    </label>
-                </div>
-            </li>
-            <li class="form__item">
-                <div class="form__wrapper">
-                    <label class="form__product-label">
-                        <div class="form__ellipse form__ellipse--yellow"></div>
-                        <input type="checkbox" class="form__checkbox visually-hidden" name="ice-coffee">
-                        <div class="form__rectangle form__rectangle--yellow">
-                            <h3 class="form__product-title">
-                                ice coffee
-                            </h3>
-                        </div>
-                    </label>
-                </div>
-            </li>
-            <li class="form__item">
-                <div class="form__wrapper">
-                    <label class="form__product-label">
-                        <div class="form__ellipse form__ellipse--red"></div>
-                        <input type="checkbox" class="form__checkbox visually-hidden" name="milkshake">
-                        <div class="form__rectangle form__rectangle--red">
-                            <h3 class="form__product-title">
-                                milkshake
-                            </h3>
-                        </div>
-                    </label>
-                </div>
-            </li>
-        </ul>
-
-        <div class="form__group">
-            <label class="form__label">
-                <input type="text" class="form__input" name="username" placeholder="Name" required
-                    pattern="[A-Za-z ]{1,30}">
-            </label>
-            <label class="form__label">
-                <input type="tel" class="form__input" name="userphone" placeholder="Phone" required
-                    pattern="[0-9+]{10,13}">
-            </label>
-            <label class="form__label">
-                <textarea class="form__textarea" name="usercomment" placeholder="Comment"></textarea>
-            </label>
-        </div>
-        <button class="button-submit" type="submit">
-            Submit
-        </button>
+      <div class="form__group">
+        <label class="form__label">
+          <input
+            type="text"
+            class="form__input"
+            name="username"
+            placeholder="Name"
+            required
+            pattern="[A-Za-z ]{1,30}"
+          />
+        </label>
+        <label class="form__label">
+          <input
+            type="tel"
+            class="form__input"
+            name="userphone"
+            placeholder="Phone"
+            required
+            pattern="[0-9+]{10,13}"
+          />
+        </label>
+        <label class="form__label">
+          <textarea
+            class="form__textarea"
+            name="usercomment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button class="button-submit" type="submit">Submit</button>
     </form>
+  </div>
 </div>
