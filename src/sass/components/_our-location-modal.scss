@@ -92,6 +92,12 @@
   }
 }
 
-.loc-img {
+iframe {
+  width: 100%;
+  border-radius: 10px;
   margin-bottom: 24px;
+
+  @media screen and(max-width:768px) {
+    height: 199px;
+  }
 }
