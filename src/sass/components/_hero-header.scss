@@ -95,8 +95,7 @@
 
 .header-menu__btn {
   @media screen and (min-width: 768px) {
-    padding-top: 29px;
-    padding-bottom: 11px;
+    padding-top: 25px;
   }
   @media screen and (min-width: 1200px) {
     display: none;
@@ -121,15 +120,16 @@
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
 
   width: 152px;
   height: 42px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-  padding: 12px 34px;
-  margin: 0;
 
+  margin: 0;
+  gap: 7px;
   border-radius: 10px;
   // cursor: pointer;
 
@@ -144,6 +144,19 @@
   &:focus {
     background-color: var(--focus-btn-cl);
     color: var(--light-txt-cl);
+  }
+}
+
+.header-modal__icon {
+  fill: var(--black-txt-cl);
+  padding-top: 1px;
+
+  & {
+    stroke: currentColor;
+  }
+
+  &:focus {
+    stroke: var(--light-txt-cl);
   }
 }
 
@@ -165,7 +178,6 @@
 .btn-buy {
   @media screen and (min-width: 768px) {
     padding-top: 24px;
-    padding-bottom: 6px;
   }
 
   @media screen and (min-width: 1200px) {
