@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-git.min.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -27,6 +28,9 @@
 
     <!-- Footer -->
     <include src="./partials/footer.html"></include>
+
+    <!-- btnUP -->
+    <include src="./partials/btnup.html"></include>
 
     <!-- Modal windows -->
     <include src="./partials/buy-now-modal.html"></include>
@@ -58,5 +62,26 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+
+    <!-- btnUP -->
+<script>
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if (height > 100) {
+          $('#back2Top').fadeIn();
+      } else {
+          $('#back2Top').fadeOut();
+      }
+  });
+  $(document).ready(function() {
+      $("#back2Top").click(function(event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+      });
+  
+  });
+</script>
+
   </body>
 </html>
