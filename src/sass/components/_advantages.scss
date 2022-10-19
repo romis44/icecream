@@ -1,16 +1,16 @@
 .advantages {
   //phone
 
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   background-color: var(--socials-default-cl);
   //tablet
   @media screen and(min-width:768px) {
-    padding-bottom: 204px;
+    padding-bottom: 184px;
   }
 
   //desctop
   @media screen and(min-width:1200px) {
-    padding-bottom: 180px;
+    padding-bottom: 160px;
   }
 }
 

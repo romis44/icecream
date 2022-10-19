@@ -1,5 +1,6 @@
 .gallery {
   // @include section(60px, 60px);
+  padding-bottom: 20px;
 
   @media screen and (max-width: 767px) {
     padding-left: 20px;
