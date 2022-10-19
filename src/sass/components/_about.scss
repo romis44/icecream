@@ -64,7 +64,6 @@
     height: 360.53px;
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 39px;
     width: auto;
     height: 529px;
   }
@@ -196,17 +195,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   min-width: 164px;
   height: 42px;
   background-color: var(--default-btn-cl);
-  // cursor: pointer;
   border: none;
   border-radius: 10px;
   border-width: 0;
   text-align: center;
-  gap: 8.83px;
+  gap: 4.82px;
   @include font(var(--main-font), 14px, 600, 1.29, 0, var(--dark-txt-cl));
   @include transition(
     background-color,
@@ -223,11 +221,21 @@
   &:hover {
     background-color: var(--focus-btn-cl);
   }
+
   &:focus {
     background-color: var(--focus-btn-cl);
     color: var(--light-txt-cl);
+    fill: var(--light-txt-cl);
   }
+
   &:disabled {
     background-color: var(--disabled-btn-cl);
   }
+}
+
+.read-more__icon {
+  fill: var(--black-txt-cl);
+  stroke: currentColor;
+  stroke-width: 0.05px;
+  @include transition(fill, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 }
