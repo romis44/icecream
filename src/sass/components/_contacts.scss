@@ -38,10 +38,7 @@ height: 340px;
 .contacts__item {
     background-color: var(--contacts-bg-cl);
     box-shadow: var(--contacts-products-box-shadow);
-    padding-top: 40px;
-    padding-right: 32px;
-    padding-left: 32px;
-    padding-bottom: 0;
+    padding: 40px 32px;
     border-radius: 24px;
     margin-bottom: 20px;
     width: 100%;
@@ -50,8 +47,18 @@ height: 340px;
 
 
     @media screen and (min-width:768px){
+    // flex-basis: calc((100% - 2*16px) / 3);
+    // display: flex;
+    // gap: 16px;
      margin-bottom: 0;
     }
+    
+    
+    @media screen and (min-width: 1200px) {
+    // flex-basis: calc((100% - 2*32px) / 3);
+    // gap: 32px;
+    }   
+
 }
 .contacts__subtitle {
     @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
@@ -112,79 +119,53 @@ height: 340px;
 
 .contacts__box {
     border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 24px;
     padding-bottom: 24px;
 
 
     @media screen and (min-width:768px){
+    margin-bottom: 26px;
     padding-bottom: 26px;
     }
             
             
     @media screen and (min-width: 1200px) {
+    margin-bottom: 36px;
     padding-bottom: 36px;
     }    
 }
 
 .contacts__info {
     border-bottom: 1px solid #E1E1E1;
+    margin-bottom: 24px;
     padding-bottom: 24px;
-    padding-top: 24px;
 
 @media screen and (min-width:768px){
+    margin-bottom: 26px;
     padding-bottom: 26px;
-    padding-top: 26px;
     }
                 
                 
 @media screen and (min-width: 1200px) {
+    margin-bottom: 36px;
     padding-bottom: 36px;
-    padding-top: 36px;
     }
 
 }
 .contacts__time {
-    &:first-child {
+    &:nth-child(2) {
         margin-bottom: 8px;
     }
 
     @media screen and (min-width:768px) {
-        &:first-child {
+        &:nth-child(2) {
             margin-bottom: 12px;
         }
     }
 
 }
 
-.contacts__connexion {
-    display: inline-block;
-    @include font(var(--main-font), 12px, 500, calc(18/12), 0.04em, var(--dark-txt-cl));
-    text-decoration: none;
-    padding-bottom: 40px;
 
-    @media screen and (min-width:768px){
-    @include font(null, 14px, null, calc(26/14), 0.04em, null);
-    }
-        
-        
-    @media screen and (min-width: 1200px) {
-    @include font(null, 16px, null, calc(29/16), 0.04em, null);
-    } 
-}
-.contacts__phone {
- 
-    padding-top: 24px;
-    padding-bottom: 0;
-
-@media screen and (min-width:768px){
-    padding-top: 26px;
-    }
-                
-                
-@media screen and (min-width: 1200px) {
-    padding-top: 36px;
-    }
-
-}
 
 .contacts__text {
     @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
@@ -203,6 +184,21 @@ height: 340px;
 .time {
     color: var(--time-txt-cl);
     }
+
+.contacts__connexion {
+    @include font(var(--main-font), 12px, 500, calc(18/12), 0.04em, var(--dark-txt-cl));
+    text-decoration: none;
+
+    @media screen and (min-width:768px){
+    @include font(null, 14px, null, calc(26/14), 0.04em, null);
+    }
+        
+        
+    @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(29/16), 0.04em, null);
+    } 
+}
+
 
 
 // buttons for contacts
