@@ -1,13 +1,11 @@
-
 .customer {
   background-color: var(--light-txt-cl);
   background-position: center;
 
-    background-size: cover;
-    height: 1045px;
-    margin-left: auto;
-    margin-right: auto;
-
+  background-size: contain;
+  height: 1045px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: url(../images/customers-background/customersreviews-bg_480@1x.png);
 
@@ -40,7 +38,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-
     background-image: url(../images/customers-background/customersreviews-bg_section2-1920@1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -80,17 +77,15 @@
   }
 }
 
-
-
 .reviews-item {
   text-align: center;
   margin-top: 170px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-top: 200px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 350px;
   }
 
