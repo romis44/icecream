@@ -7,7 +7,7 @@ height: 1040px;
 
 
     @media screen and (min-width: 768px){
-height: 335px;
+height: 333px;
     } 
 
     @media screen and (min-width: 1200px) {
@@ -214,7 +214,6 @@ height: 335px;
 
 .contacts__button {
     display: block;
-
     transform: translateY(-321%);
 
 
@@ -231,16 +230,6 @@ height: 335px;
     }
 
 }
-.contacts__icons {
-    width: 12px;
-    height: 12px;
-    fill: var(--black-txt-cl);
-    @include transition(fill, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
-    &{
-        stroke: currentColor
-    }
-}
-
 
 .contacts__btn {
     @include font(var(--main-font), 14px, 600, calc(18/14), 0.04em, var(--dark-txt-cl));
@@ -251,10 +240,9 @@ height: 335px;
     justify-content: center;
     align-items: center;
     background: transparent;
-
     border: 2px solid var(--default-btn-cl);
     border-radius: 10px; 
-    @include transition(color, border-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    @include transition(color, border-color, fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
     margin: 0 auto;
     margin-bottom: 16px;
 
@@ -265,39 +253,49 @@ height: 335px;
     @media screen and (min-width:768px) {
         margin: 0;
     }
+    &:hover {
+        border-color: var(--focus-btn-cl);
+    }
+    
+    &:focus {
+        border-color: var(--focus-btn-cl);
+        color: var(--light-txt-cl);
+        fill: var(--light-txt-cl);
+    }
+    &:disabled {
+        background-color: var(--disabled-btn-cl);
+      }
 }
 
-.contacts__btn:hover {
-    border-color: var(--focus-btn-cl);
-}
 
-.contacts__btn:focus {
-    border-color: var(--focus-btn-cl);
-    color: var(--light-txt-cl)
-}
 
 .current__btn {
     border: none;
     background-color: var(--default-btn-cl);
     text-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-    @include transition(color, background-color, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    @include transition(color, background-color, fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+    
+    &:hover {
+    background-color: var(--focus-btn-cl);}
 
+    &:focus {
+    background-color: var(--focus-btn-cl);
+    color: var(--light-txt-cl);
+    fill: var(--light-txt-cl);}
 
+    &:disabled {
+    background-color: var(--disabled-btn-cl);
+    }
+    
     @media screen and (min-width:768px) {
         text-shadow: none;
     }
+
 }
 
-.current__btn:hover {
-    background-color: var(--focus-btn-cl);
-}
-
-.current__btn:focus {
-    background-color: var(--focus-btn-cl);
-    color: var(--light-txt-cl)
-}
-
-
+.contacts__icons {
+    fill: var(--black-txt-cl);
+  }
 
 
 
