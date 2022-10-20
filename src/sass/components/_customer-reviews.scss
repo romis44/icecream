@@ -3,7 +3,6 @@
   background-color: var(--light-txt-cl);
   background-position: center;
 
-    background-repeat: no-repeat;
     background-size: cover;
     height: 1045px;
     margin-left: auto;
@@ -40,6 +39,18 @@
     }
   }
 
+  @media screen and (min-width: 1200px) {
+
+    background-image: url(../images/customers-background/customersreviews-bg_section2-1920@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: 1920px;
+      background-image: url(../images/customers-background/customersreviews-bg_section2-1920@2x.png);
+    }
+  }
+
   @media screen and(min-width:768px) {
     height: 959px;
   }
@@ -69,9 +80,7 @@
   }
 }
 
-.block-items {
-  cursor: default;
-}
+
 
 .reviews-item {
   text-align: center;
