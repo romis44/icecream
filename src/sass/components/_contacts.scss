@@ -1,301 +1,331 @@
 .contacts {
-    position: relative;
-height: 1040px;
+  position: relative;
+  height: 1040px;
 
-    @include section($pt: null, $pb: 40px);
-    background-color: var(--main-bg-cl);
+  @include section($pt: null, $pb: 40px);
+  background-color: var(--main-bg-cl);
 
+  @media screen and (min-width: 768px) {
+    height: 333px;
+  }
 
-    @media screen and (min-width: 768px){
-height: 333px;
-    } 
+  @media screen and (min-width: 1200px) {
+    @include section($pt: null, $pb: 120px);
+    height: 662px;
+  }
 
-    @media screen and (min-width: 1200px) {
-    @include section($pt: null, $pb: 120px); 
-    height: 662px; 
-    }
+  &__container {
+    height: 100%;
+  }
 }
 
 .contacts__list {
-    margin-bottom: 32px;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-27%);
+  margin-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-27%);
 
-   
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     @include list(flex, 16px, row, nowrap);
     transform: translateY(-55%);
-    }
+  }
 
-    // desktop styles
-    @media screen and (min-width: 1200px) {
+  // desktop styles
+  @media screen and (min-width: 1200px) {
     @include list(null, 32px, null, null);
     transform: translateY(-15%);
-    }
-
-
+  }
 }
 .contacts__item {
-    background-color: var(--contacts-bg-cl);
-    box-shadow: var(--contacts-products-box-shadow);
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    border-radius: 24px;
-    margin-bottom: 20px;
-    width: 100%;
-       &:last-child{
-           margin-bottom: 0;}
+  background-color: var(--contacts-bg-cl);
+  box-shadow: var(--contacts-products-box-shadow);
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-
-    @media screen and (min-width:768px){
-     margin-bottom: 0;
-    }
-    
-
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 .contacts__subtitle {
-    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
-    background: var(--default-btn-cl);
-    border-radius: 4px;
+  @include font(
+    var(--main-font),
+    12px,
+    500,
+    calc(22 / 12),
+    0.04em,
+    var(--dark-txt-cl)
+  );
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background: var(--default-btn-cl);
+  border-radius: 4px;
 
-    @media screen and (min-width:768px){
-    @include font(null, 16px, null, calc(30/16), null, null);
+  @media screen and (min-width: 768px) {
+    @include font(null, 16px, null, calc(30 / 16), null, null);
     margin-bottom: 32px;
     padding-right: 12px;
     padding-left: 12px;
-}
-
+  }
 }
 .contacts__article {
-    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
-    margin: 0;
-    margin-bottom: 8px;
+  @include font(
+    var(--main-font),
+    12px,
+    500,
+    calc(22 / 12),
+    0.04em,
+    var(--dark-txt-cl)
+  );
+  margin: 0;
+  margin-bottom: 8px;
 
-    @media screen and (min-width:768px){
-    @include font(null, 14px, null, calc(26/14), null, null);
+  @media screen and (min-width: 768px) {
+    @include font(null, 14px, null, calc(26 / 14), null, null);
     margin-bottom: 12;
-    }
-        
-        
-    @media screen and (min-width: 1200px) {
-    @include font(null, 16px, null, calc(30/16), null, null);
-    margin-bottom: 18;
-    } 
+  }
 
+  @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(30 / 16), null, null);
+    margin-bottom: 18;
+  }
 }
 
 .contacts__link {
-    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--map-txt-cl));
-    text-decoration: none;
-    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+  @include font(
+    var(--main-font),
+    12px,
+    500,
+    calc(22 / 12),
+    0.04em,
+    var(--map-txt-cl)
+  );
+  text-decoration: none;
+  @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
-    &:hover,
-    &:focus {
-        color: var(--focus-btn-cl);
-    }
+  &:hover,
+  &:focus {
+    color: var(--focus-btn-cl);
+  }
 
+  @media screen and (min-width: 768px) {
+    @include font(null, 14px, null, calc(26 / 14), null, null);
+  }
 
-    @media screen and (min-width:768px){
-    @include font(null, 14px, null, calc(26/14), null, null);
-    }
-            
-            
-    @media screen and (min-width: 1200px) {
-    @include font(null, 16px, null, calc(30/16), null, null);
-    } 
+  @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(30 / 16), null, null);
+  }
 }
 
 .contacts__box {
-    border-bottom: 1px solid #E1E1E1;
-    padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 24px;
 
-
-    @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     padding-bottom: 26px;
-    }
-            
-            
-    @media screen and (min-width: 1200px) {
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-bottom: 36px;
-    }    
+  }
 }
 
 .contacts__info {
-    border-bottom: 1px solid #E1E1E1;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
-@media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
-    }
-                
-                
-@media screen and (min-width: 1200px) {
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-top: 36px;
     padding-bottom: 36px;
-    }
-
+  }
 }
 .contacts__time {
-    &:firs-child {
-        margin-bottom: 8px;
-    }
+  &:firs-child {
+    margin-bottom: 8px;
+  }
 
-    @media screen and (min-width:768px) {
-        &:first-child {
-            margin-bottom: 12px;
-        }
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-bottom: 12px;
     }
-
+  }
 }
 
-
-
 .contacts__text {
-    @include font(var(--main-font), 12px, 500, calc(22/12), 0.04em, var(--dark-txt-cl));
-    margin: 0;
+  @include font(
+    var(--main-font),
+    12px,
+    500,
+    calc(22 / 12),
+    0.04em,
+    var(--dark-txt-cl)
+  );
+  margin: 0;
 
-    @media screen and (min-width:768px){
-    @include font(null, 14px, null, calc(26/14), null, null);
-    }
-        
-        
-    @media screen and (min-width: 1200px) {
-    @include font(null, 16px, null, calc(30/16), null, null);
-    } 
+  @media screen and (min-width: 768px) {
+    @include font(null, 14px, null, calc(26 / 14), null, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(30 / 16), null, null);
+  }
 }
 
 .time {
-    color: var(--time-txt-cl);
-    }
+  color: var(--time-txt-cl);
+}
 
 .contacts__connexion {
-    @include font(var(--main-font), 12px, 500, calc(18/12), 0.04em, var(--dark-txt-cl));
-    text-decoration: none;
-    display: inline-block;
-    padding-bottom: 24px;
+  @include font(
+    var(--main-font),
+    12px,
+    500,
+    calc(18 / 12),
+    0.04em,
+    var(--dark-txt-cl)
+  );
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 24px;
 
-    @media screen and (min-width:768px){
-    @include font(null, 14px, null, calc(26/14), 0.04em, null);
+  @media screen and (min-width: 768px) {
+    @include font(null, 14px, null, calc(26 / 14), 0.04em, null);
     padding-bottom: 26px;
-    }
-        
-        
-    @media screen and (min-width: 1200px) {
-    @include font(null, 16px, null, calc(29/16), 0.04em, null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 16px, null, calc(29 / 16), 0.04em, null);
     padding-bottom: 36px;
-    } 
+  }
 }
 
 .contacts__phone {
-    padding-top: 24px;
-    padding-bottom: 0;
+  padding-top: 24px;
+  padding-bottom: 0;
 
-@media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     padding-top: 26px;
-    }
-                
-                
-@media screen and (min-width: 1200px) {
-    padding-top: 36px;
-    }
-}
+  }
 
+  @media screen and (min-width: 1200px) {
+    padding-top: 36px;
+  }
+}
 
 // buttons for contacts
 
 .contacts__button {
-    display: block;
-    transform: translateY(-321%);
+  display: block;
+  transform: translateY(-321%);
 
-
-    @media screen and (min-width:768px){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        margin: 0 auto;
-        transform: translateY(-635%);
-    }
-    @media screen and (min-width:1200px){
-        transform: translateY(-198%);
-    }
-
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    transform: translateY(-635%);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translateY(-198%);
+  }
 }
 
 .contacts__btn {
-    @include font(var(--main-font), 14px, 600, calc(18/14), 0.04em, var(--dark-txt-cl));
-    display: flex;
-    width: 196px;
-    height: 42px;
-    gap: 6px;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: 2px solid var(--default-btn-cl);
-    border-radius: 10px; 
-    @include transition(color, border-color, fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
-    margin: 0 auto;
-    margin-bottom: 16px;
+  @include font(
+    var(--main-font),
+    14px,
+    600,
+    calc(18 / 14),
+    0.04em,
+    var(--dark-txt-cl)
+  );
+  display: flex;
+  width: 196px;
+  height: 42px;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid var(--default-btn-cl);
+  border-radius: 10px;
+  @include transition(
+    color,
+    border-color,
+    fill,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
+  margin: 0 auto;
+  margin-bottom: 16px;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-    @media screen and (min-width:768px) {
-        margin: 0;
-    }
-    &:hover {
-        border-color: var(--focus-btn-cl);
-    }
-    
-    &:focus {
-        border-color: var(--focus-btn-cl);
-        color: var(--light-txt-cl);
-        fill: var(--light-txt-cl);
-    }
-    &:disabled {
-        background-color: var(--disabled-btn-cl);
-      }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  &:hover {
+    border-color: var(--focus-btn-cl);
+  }
+
+  &:focus {
+    border-color: var(--focus-btn-cl);
+    color: var(--light-txt-cl);
+    fill: var(--light-txt-cl);
+  }
+  &:disabled {
+    background-color: var(--disabled-btn-cl);
+  }
 }
 
-
-
 .current__btn {
-    border: none;
-    background-color: var(--default-btn-cl);
-    text-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
-    @include transition(color, background-color, fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
-    
-    &:hover {
-    background-color: var(--focus-btn-cl);}
+  border: none;
+  background-color: var(--default-btn-cl);
+  text-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  @include transition(
+    color,
+    background-color,
+    fill,
+    250ms,
+    cubic-bezier(0.4, 0, 0.2, 1)
+  );
 
-    &:focus {
+  &:hover {
+    background-color: var(--focus-btn-cl);
+  }
+
+  &:focus {
     background-color: var(--focus-btn-cl);
     color: var(--light-txt-cl);
-    fill: var(--light-txt-cl);}
+    fill: var(--light-txt-cl);
+  }
 
-    &:disabled {
+  &:disabled {
     background-color: var(--disabled-btn-cl);
-    }
-    
-    @media screen and (min-width:768px) {
-        text-shadow: none;
-    }
+  }
 
+  @media screen and (min-width: 768px) {
+    text-shadow: none;
+  }
 }
 
 .contacts__icons {
-    fill: var(--black-txt-cl);
-  }
-
-
-
+  fill: var(--black-txt-cl);
+}
