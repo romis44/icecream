@@ -30,7 +30,6 @@
   line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 42px;
   padding-right: 100px;
 
   color: var(--light-txt-cl);
@@ -40,27 +39,31 @@
     line-height: 1.22;
     letter-spacing: 0.06em;
     padding-right: 0;
-    margin-bottom: 32px;
   }
 
   @media screen and(min-width:1200px) {
     font-size: 58px;
     line-height: 1.22;
-    margin-bottom: 54px;
   }
 }
 
 .socials {
+  padding-bottom: 40px;
+
   @media screen and (min-width: 768px) {
     flex-direction: column;
     justify-content: center;
-    margin-top: auto;
+    // margin-top: auto;
     margin-left: auto;
     display: flex;
+    padding-bottom: 56px;
+    padding-top: 68px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 0;
+    padding-bottom: 60px;
+    padding-top: 0;
   }
 }
 
@@ -70,7 +73,6 @@
   line-height: 1.86;
   color: var(--dark-txt-cl);
   text-align: right;
-  padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -87,6 +89,7 @@
   font-size: 12px;
   line-height: 1.86;
   color: var(--light-txt-cl);
+  padding: 3px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -126,15 +129,20 @@
 }
 
 .footer__title {
+  margin-bottom: 42px;
+
   @media screen and(min-width:768px) {
     width: 352px;
     flex-direction: column;
     justify-content: center;
     display: flex;
+    padding-bottom: 32px;
+    margin-bottom: 0;
   }
 
   @media screen and(min-width:1200px) {
     width: auto;
+    padding-bottom: 54px;
   }
 }
 
@@ -173,16 +181,13 @@
 .copiright {
   border-top: 1px solid #e1e1e1;
   padding-top: 16px;
-  padding-bottom: 62px;
 
   @media screen and(min-width:768px) {
     padding-top: 14px;
-    padding-bottom: 13px;
   }
 
   @media screen and(min-width:1200px) {
     padding-top: 12px;
-    padding-bottom: 11px;
   }
 }
 
@@ -190,5 +195,19 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+  }
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 62px;
+
+  @media screen and(min-width:768px) {
+    padding-bottom: 13px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-top: 60px;
+    padding-bottom: 11px;
   }
 }
