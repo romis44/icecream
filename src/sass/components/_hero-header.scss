@@ -79,6 +79,7 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--light-txt-cl);
+  padding-top: 8px;
 
   transition-property: background-color, color;
   transition-duration: 0.25s;
@@ -332,10 +333,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 
 // Hero section
