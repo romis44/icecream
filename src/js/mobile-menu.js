@@ -1,9 +1,7 @@
-// Mobile menu
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
-  const closeMenuBtn22 = document.querySelector('.js-menu-close22');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -17,23 +15,8 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
-  $('.mobile-nav__link').on('click', function () {
-    //this == the link that was clicked
-    // var href = $(this).attr("href");
-    // alert("You're trying to go to " + href);
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
-
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
-
-  closeMenuBtn22.addEventListener('click', () => {
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
@@ -41,5 +24,15 @@
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
+  });
+
+  // При клике на ссылку навигации в мобильном меню закрываем мобильное меню
+  const closeMobileBtn = document.querySelectorAll('.mobile-nav__link');
+  closeMobileBtn.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      const menu = document.querySelector('#mobile-menu');
+      menu.classList.remove('is-open');
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
   });
 })();
